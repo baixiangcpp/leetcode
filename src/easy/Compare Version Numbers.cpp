@@ -8,7 +8,6 @@ public:
         while(version.find('.') != string::npos)
         {
             v.push_back(stoi(version.substr(0,version.find('.'))));
-            //basic_string substr( size_type index, size_type num = npos );
             version = version.substr(version.find('.')+1,version.size()-version.find('.')-1);
         }
         v.push_back(stoi(version));
