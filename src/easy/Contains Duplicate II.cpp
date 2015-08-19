@@ -8,7 +8,7 @@ public:
 			p = m.insert(pair<int,int>(nums[i],i));
 			if(!p.second){
 				if(i-m[nums[i]]> k)
-					m[nums[i]]=i;//this  is important
+					m[nums[i]]=i; //this  is important
 				else
 					return true;
 			}
